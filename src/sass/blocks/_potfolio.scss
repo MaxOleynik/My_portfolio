@@ -1,0 +1,53 @@
+.portfolio {
+    padding: 60px;
+    background: linear-gradient(180deg, rgba(29, 112, 183, 0) 30.5%, rgba(29, 112, 183, 0.1) 100%);
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        text-align: center;
+        color: #141414;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #141414;
+        margin-bottom: 86px;
+    }
+    &__carousel {
+        &_descr {
+            width: 730px;
+            text-align: left;
+            margin: 27px auto 0;
+            padding: 0 45px;
+        }
+        &_inner {
+            margin-top: 86px;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 24px;
+            margin: 0 30px 0;
+        }
+        &_img {
+            margin: 0 auto;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #141414;
+        }
+        &_detail {  
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #141414;
+            a {              
+                font-weight: 700;
+                font-size: 16px;
+                color: #2F8BCB;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.header {
+    background: url('../../img/main_bg.jpg') center (center/cover) no-repeat;
+    min-height: 900px;
+    padding-top: 55px;
+    &__nav {
+        display: grid;
+        grid-template-columns: 630px 162px;
+        grid-gap: 66px;
+        justify-content: end;
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        &_item {
+            transition: .3s all;
+            &:hover {
+                &::before {
+                    content: '\27F6';
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    &__questions{
+        &_title{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+        &_icons {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        &_icon {
+            margin: 15px;
+        }
+    }
+    &__descr {
+        margin-top: 196px;
+        &_title{
+            font-weight: 400;
+            font-size: 24px;
+            color: #141414;
+        }
+        &_subtitle {
+            font-weight: 600;
+            font-size: 48px;
+            color: #141414;
+        }
+        &_about-basic   {
+            margin-top: 105px;
+            width: 435px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+        &_about-detailed  {
+            width: 435px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            
+        }
+    }
+    &__btn {
+        button{
+            display: block;
+            margin: 20px auto;
+            width: 160px;
+            height: 40px;
+            background: #141414;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            transition: .3s all;
+            &:hover {
+                background-color: #2F8BCB;
+            }
+        }
+        
+    }
+}

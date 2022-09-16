@@ -1,0 +1,151 @@
+.process {
+    padding: 60px;
+    background: linear-gradient(180deg, rgba(237, 237, 237, 0) 58.34%, #EEEEEE 100%);
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        color: #141414;
+        text-align: center;
+        
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #141414;
+        text-align: center;
+    }
+    &__cards{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        &_item {
+            &-red {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                grid-row: 4 / 5;
+                grid-column: 1 / 1;
+            }
+            &-purple {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                grid-row: 3 / 5;
+                grid-column: 2 / 2;
+            }
+            &-blue {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                grid-row: 3 / 3;
+                grid-column: 3 / 3;
+            }
+            &-aqua {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                grid-row: 2 / 4;
+                grid-column: 4 / 4;
+            }
+            &-green {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                grid-row: 2 / 2;
+                grid-column: 5 / 5;
+            }
+            &-descr {                
+                font-weight: 700;
+                font-size: 12px;
+                text-align: center;
+                color: #000000;
+                margin: auto;
+            }
+            &-title{        
+                font-weight: 700;
+                font-size: 24px;
+                text-align: center;
+                color: #000000;
+                &::after {
+                    content: '➜';
+                    display: inline-block;
+                    transform: rotate(-45deg);
+                    font-size: 24px;
+                    margin-left: 25px;
+                    font-weight: 100;
+                }
+                &-end {
+                    font-weight: 700;
+                    font-size: 24px;
+                    text-align: center;
+                    color: #000000;
+                    &::after {
+                        content: '\2713';
+                        font-size: 24px;
+                        margin-left: 25px;
+                        color:#57B52C;
+                    }
+                }
+            }
+            
+            &-card-red {  
+                width: 160px;
+                height: 160px;
+                padding: 12px;
+                display: grid;
+                grid-column: 3 / 4;
+                background: #FF8787;
+                border-radius: 24px;
+                filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));    
+            }
+
+            &-card-purple {  
+                width: 160px;
+                height: 160px;
+                padding: 12px;
+                display: grid;
+                background: #B896FF;
+                border-radius: 24px;
+                filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));    
+            }
+
+            &-card-blue {  
+                width: 160px;
+                height: 160px;
+                padding: 12px;
+                display: grid;
+                background: #74C6FF;
+                border-radius: 24px;
+                filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));    
+            }
+
+            &-card-aqua {  
+                width: 160px;
+                height: 160px;
+                padding: 12px;
+                display: grid;
+                background: #2FCBA6;
+                border-radius: 24px;
+                filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));    
+            }
+
+            &-card-green {  
+                width: 160px;
+                height: 160px;
+                padding: 12px;
+                display: grid;
+                background: #2EB12B;
+                border-radius: 24px;
+                filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.1));    
+            }
+            
+        }
+    }
+}
